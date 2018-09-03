@@ -1,0 +1,11 @@
+cpuburn lets you use 100% of all available cores, useful when stress-testing.
+
+== Usage
+
+  ./cpuburn (burn all available cores)
+
+== History
+
+I didn't want to download a precompiled binary or install Go to run Patrick Mylund Nielsen's cpuburn. So I wrote my own one in C. And then in node. And then, just for fun, in PHP.
+
+You can find Patrick's cpuburn at https://github.com/patrickmn/cpuburn
