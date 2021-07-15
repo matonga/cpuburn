@@ -6,7 +6,7 @@ for ($i=1; $i<count($argv); $i++) {
 	}
 }
 if (!$cores) {
-	$cores = count (array_slice (explode ("processor\t:", file_get_contents ('/proc/cpuinfo')), 1));
+	$cores = substr_count (file_get_contents ('/proc/cpuinfo'), "processor\t:");
 }
 printf ("Burning %u cores...\n", $cores);
 for ($i=0; $i<$cores; $i++) {
